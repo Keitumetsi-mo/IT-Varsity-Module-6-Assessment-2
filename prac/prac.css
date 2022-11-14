@@ -1,0 +1,79 @@
+.card {
+    box-shadow: 3px 3px 16px 4px #363633;
+    padding: 15px 20px;
+    border-radius: 3px;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    color: #363633;
+    background-color: #363633;
+    border: none;
+    
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 5px;
+}
+
+.small {
+    width: 30%;
+    height: 30%;
+}
+
+
+/* .wrapper {
+    display: flex;
+    grid-template-columns: 80px 80px;
+    grid-gap: 25px;
+    background-color: #fff;
+} */
+
+/****************************************************/
+/* Frame Styling                                    */
+/****************************************************/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 2 / 3 / 3 / 4; }
+    .div5 { grid-area: 2 / 2 / 3 / 3; }
+    .div6 { grid-area: 2 / 1 / 3 / 2; }
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 90%;
+        align-self: center;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    body {
+        width: 90%;
+        align-self: center;
+        margin-left: 5%;
+    }
+}
+
